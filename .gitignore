@@ -1,0 +1,16 @@
+# backend
+__pycache__/
+*.py[codz]
+*$py.class
+*.so
+.mypy_cache/
+.idea/
+.venv/
+venv/
+.ruff_cache
+
+# frontend
+node_modules/
+
+# project
+.env
