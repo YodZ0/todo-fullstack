@@ -1,9 +1,9 @@
 import { createRoute } from "@tanstack/react-router";
-import { MainPage } from "@/pages/main";
+import { TimerPage } from "@/pages/timer";
 import { mainLayoutRoute } from "./main-layout";
 
-export const mainRoute = createRoute({
+export const timerRoute = createRoute({
   getParentRoute: () => mainLayoutRoute,
-  path: "/",
-  component: MainPage,
+  path: "/timer",
+  component: TimerPage,
 });

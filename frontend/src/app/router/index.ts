@@ -3,11 +3,17 @@ import { NotFoundPage } from "@/pages/not-found";
 import { rootRoute } from "./root";
 import { protectedRoute } from "./routes/protected";
 import { mainLayoutRoute } from "./routes/main-layout";
-import { mainRoute } from "./routes/main";
+import { tasksRoute } from "./routes/tasks";
+import { timerRoute } from "./routes/timer";
+import { statsRoute } from "./routes/stats";
 
 const routeTree = rootRoute.addChildren([
   protectedRoute.addChildren([
-    mainLayoutRoute.addChildren([mainRoute]),
+    mainLayoutRoute.addChildren([
+      tasksRoute,
+      timerRoute,
+      statsRoute,
+    ]),
   ]),
 ]);
 
