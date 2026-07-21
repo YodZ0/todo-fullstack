@@ -2,7 +2,7 @@ import * as React from "react"
 
 export type Theme = "dark" | "light" | "system"
 
-type ThemeProviderState = {
+interface ThemeProviderState {
   theme: Theme
   setTheme: (theme: Theme) => void
 }
