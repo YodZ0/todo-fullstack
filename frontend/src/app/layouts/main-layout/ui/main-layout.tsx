@@ -3,9 +3,9 @@ import { Navbar } from "@/widgets/navbar";
 
 export const MainLayout = () => {
   return (
-    <div className="">
+    <div className="flex min-h-screen flex-col">
       <Navbar />
-      <main className="">
+      <main className="flex flex-1 flex-col">
         <Outlet />
       </main>
     </div>
