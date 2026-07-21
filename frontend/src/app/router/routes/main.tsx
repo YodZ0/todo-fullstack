@@ -1,9 +1,9 @@
 import { createRoute } from "@tanstack/react-router";
 import { MainPage } from "@/pages/main";
-import { rootRoute } from "../root";
+import { mainLayoutRoute } from "./main-layout";
 
 export const mainRoute = createRoute({
-  getParentRoute: () => rootRoute,
+  getParentRoute: () => mainLayoutRoute,
   path: "/",
   component: MainPage,
 });
